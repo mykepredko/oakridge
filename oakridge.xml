@@ -1,69 +1,69 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="9" x="78" y="75">
+  <block type="oled_cleardisplay" id="1" x="78" y="75">
     <next>
-      <block type="oled_setcursor" id="24" inline="true">
+      <block type="oled_setcursor" id="2" inline="true">
         <value name="STARTX">
-          <block type="math_number" id="31">
+          <block type="math_number" id="3">
             <field name="NUM">10</field>
           </block>
         </value>
         <value name="STARTY">
-          <block type="math_number" id="32">
+          <block type="math_number" id="4">
             <field name="NUM">10</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="41">
+          <block type="oled_drawtext" id="5">
             <field name="TEXT">50 x 100 = </field>
             <next>
-              <block type="oled_setcursor" id="72" inline="true">
+              <block type="oled_setcursor" id="6" inline="true">
                 <value name="STARTX">
-                  <block type="math_number" id="73">
+                  <block type="math_number" id="7">
                     <field name="NUM">10</field>
                   </block>
                 </value>
                 <value name="STARTY">
-                  <block type="math_number" id="74">
+                  <block type="math_number" id="8">
                     <field name="NUM">20</field>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_drawnumber" id="50" inline="true">
+                  <block type="oled_drawnumber" id="9" inline="true">
                     <value name="NUMBER">
-                      <block type="math_arithmetic" id="57" inline="true">
+                      <block type="math_arithmetic" id="10" inline="true">
                         <field name="OP">MULTIPLY</field>
                         <value name="A">
-                          <block type="math_number" id="64">
+                          <block type="math_number" id="11">
                             <field name="NUM">50</field>
                           </block>
                         </value>
                         <value name="B">
-                          <block type="math_number" id="71">
+                          <block type="math_number" id="12">
                             <field name="NUM">100</field>
                           </block>
                         </value>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_forward" id="84">
+                      <block type="movement_forward" id="13">
                         <next>
-                          <block type="robot_delay" id="86" inline="true">
+                          <block type="robot_delay" id="14" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="93">
+                              <block type="math_number" id="15">
                                 <field name="NUM">4000</field>
                               </block>
                             </value>
                             <next>
-                              <block type="movement_right" id="103">
+                              <block type="movement_right" id="16">
                                 <next>
-                                  <block type="robot_delay" id="104" inline="true">
+                                  <block type="robot_delay" id="17" inline="true">
                                     <value name="DELAY">
-                                      <block type="math_number" id="105">
+                                      <block type="math_number" id="18">
                                         <field name="NUM">4000</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="movement_stop" id="115"></block>
+                                      <block type="movement_stop" id="19"></block>
                                     </next>
                                   </block>
                                 </next>
